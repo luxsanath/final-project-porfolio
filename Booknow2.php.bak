@@ -32,7 +32,7 @@
       <label for="cus_email">Email</label>
       <input type="email" required name="email" value=""/>
 
-     <label for="cus_tel">Telephone Number</label>
+      <label for="cus_tel">Telephone Number</label>
       <input type="text" required name="tel" value=""/>
 
       <label for="cus_notes">Notes (if any)</label>

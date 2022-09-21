@@ -23,16 +23,19 @@ class Booknow {
   function save ($date, $slot, $name, $email, $tel, $notes="") {
     try {
       $this->stmt = $this->pdo->prepare(
-        "INSERT INTO `Booknow` (`dec_date`, `dec_slot`, `cus_name`, `cus_email`, `cus_tel`, `cus_notes`) VALUES (?,?,?,?,?,?)"
-      );
+"INSERT INTO `booknow`(`ord_id`, `dec_date`, `dec_slot`, `cus_name`, `cus_email`, `cus_tel`, `cus_notes`) VALUES ('[value-1]','[value-2]','[value-3]','[value-4]','[value-5]','[value-6]','[value-7]')  );"
       $this->stmt->execute([$date, $slot, $name, $email, $tel, $notes]);
     } catch (Exception $ex) {
       $this->error = $ex->getMessage();
       return false;
     }
-	<input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
-  <small>Format: 123-45-678</small><br><br>
-  <input type="submit">
+    $subject = "Order Received";
+    $message = "Thank you, we have received your request and will process it shortly.";
+    @mail($email, $subject, $message);
+    return true;
+  }
+
+	
 
     $subject = "Order Received";
     $message = "Thank you, we have received your request and will process it shortly.";

@@ -47,9 +47,8 @@
 
       <label>Decorations Slot</label>
       <select name="slot">
-        <option value="morning">Morning</option>
-        <option value="evening">Evening</option>
-		<option value="night">Night</option>
+        <option value="am">AM</option>
+        <option value="pm">PM</option>
 
       </select>
 

@@ -427,13 +427,5 @@ minimal expense, perfect and clean way. I made my site.</p>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
-<script>
-
-AOS.init({
-   duration: 800,
-});
-
-</script>
-
 </body>
 </html>

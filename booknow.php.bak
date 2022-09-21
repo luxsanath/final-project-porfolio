@@ -30,6 +30,13 @@ class Booknow {
       $this->error = $ex->getMessage();
       return false;
     }
+    $subject = "Order Received";
+    $message = "Thank you, we have received your request and will process it shortly.";
+    @mail($email, $subject, $message);
+    return true;
+  }
+
+	
 
     $subject = "Order Received";
     $message = "Thank you, we have received your request and will process it shortly.";
@@ -49,7 +56,7 @@ class Booknow {
 }
 
 define("DB_HOST", "localhost");
-define("DB_NAME", "order");
+define("DB_NAME", "eventdeco");
 define("DB_CHARSET", "utf8");
 define("DB_USER", "root");
 define("DB_PASSWORD", "");

@@ -35,15 +35,7 @@ class Booknow {
     @mail($email, $subject, $message);
     return true;
   }
-
-	
-
-    $subject = "Order Received";
-    $message = "Thank you, we have received your request and will process it shortly.";
-    @mail($email, $subject, $message);
-    return true;
-  }
-
+  
   function getDay ($day="") {
     if ($day=="") { $day = date("Y-m-d"); }
 
