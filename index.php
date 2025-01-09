@@ -32,32 +32,12 @@
 
 </head>
 <body>
-<div class="content">
-  	<!-- notification message -->
-  	<?php if (isset($_SESSION['success'])) : ?>
-      <div class="error success" >
-      	<h3>
-          <?php 
-          	echo $_SESSION['success']; 
-          	unset($_SESSION['success']);
-          ?>
-      	</h3>
-      </div>
-  	<?php endif ?>
 
-    <!-- logged in user information -->
-    <?php  if (isset($_SESSION['username'])) : ?>
-    	<p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
-    	<p> <a href="index.php?logout='1'" style="color: red;">logout</a> </p>
-    <?php endif ?>
-</div>
 <header class="header">
 
    <div id="menu-btn" class="fas fa-bars icons"></div>
-   <div id="search-btn" class="fas fa-search icons"></div>
 
    <nav class="navbar">
-	  <a href="login.php">login</a>
       <a href="#home">home</a>
       <a href="#menu">menu</a>
       <a href="#about">about</a>
@@ -71,7 +51,6 @@
    <a href="Booknow2.php" class="fas fa-shopping-cart icons"></a>
    <form action="" class="search-form">
       <input type="search" name="" placeholder="search here..." id="search-box">
-      <label for="search-box" class="fas fa-search icons"></label>
    </form>
    
 </header>
@@ -313,13 +292,6 @@ minimal expense, perfect and clean way. I made my site.</p>
 
       </div>
 
-      <div class="box" data-aos="fade-up" data-aos-delay="300">
-         <img src="images/jani.jpg" alt="">
-         <h3>Janith</h3>
-         <p>Balloon Decorators</p>
-		 <p>075-6926215</p>
-
-      </div>
 
       <div class="box" data-aos="fade-up" data-aos-delay="450">
          <img src="images/lux.jpg" alt="">
@@ -409,7 +381,6 @@ minimal expense, perfect and clean way. I made my site.</p>
 <section class="footer">
 
    <div class="links">
-      <a href="#login" class="btn">login</a>
 	  <a href="#home" class="btn">home</a>
       <a href="#menu" class="btn">menu</a>
       <a href="#about" class="btn">about</a>
@@ -429,7 +400,7 @@ minimal expense, perfect and clean way. I made my site.</p>
 
 <script>
 
-AOS.init({
+AOS.init({ 
    duration: 800,
 });
 
