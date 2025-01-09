@@ -11,26 +11,7 @@ body {
   background-position: center;
   overflow-x: hidden;
 }
-#bknForm {
-  max-width: 400px;
-  padding: 15px;
-  background: #f2f2f2;
-  border: 1px solid #aaa;
-}
-#bknForm label, #bknForm input, #bknForm select {
-  display: block;
-  box-sizing: border-box;
-  width: 100%;
-  padding: 5px;
-  margin: 5px 0;
-}
-#bknForm input[type="submit"] {
-  background: #5c76d4;
-  color: #fff;
-  border: 0;
-  padding: 15px 0;
-  margin-top: 15px;
-  cursor: pointer;
+z
 }
 div.ok, div.err { 
   padding: 5px; 

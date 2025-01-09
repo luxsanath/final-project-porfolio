@@ -67,8 +67,8 @@ section {
   left: 0;
   right: 0;
   z-index: 1000;
-  background: #000;
-  padding: 3rem 9%;
+  background: #000000;
+  padding: 1rem 6%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -152,7 +152,7 @@ section {
 }
 
 .home .content {
-  max-width: 70rem;
+  max-width: 60rem;
   text-align: center;
   margin: 0 auto;
 }
@@ -211,7 +211,7 @@ section {
   color: #aaa;
 }
 
-.menu .box-container {
+.Decorations .box-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(31rem, 1fr))[auto-fit];
@@ -219,39 +219,39 @@ section {
   gap: 2rem;
 }
 
-.menu .box-container .box {
+.Decorations .box-container .box {
   text-align: center;
 }
 
-.menu .box-container .box:hover img {
+.Decorations .box-container .box:hover img {
   -webkit-transform: translateY(1rem);
           transform: translateY(1rem);
 }
 
-.menu .box-container .box img {
+.Decorations .box-container .box img {
   height: 25rem;
 }
 
-.menu .box-container .box .content {
+.Decorations .box-container .box .content {
   padding: 1rem 0;
 }
 
-.menu .box-container .box .content .stars {
+.Decorations .box-container .box .content .stars {
   margin-bottom: 2rem;
 }
 
-.menu .box-container .box .content .stars i {
+.Decorations .box-container .box .content .stars i {
   font-size: 1.7rem;
   color: #eacf4f;
 }
 
-.menu .box-container .box .content h3 {
+.Decorations .box-container .box .content h3 {
   font-size: 2rem;
   text-transform: uppercase;
   color: #fff;
 }
 
-.menu .box-container .box .content .price {
+.Decorations .box-container .box .content .price {
   font-size: 2rem;
   line-height: 2;
   color: #aaa;
@@ -320,48 +320,6 @@ section {
 
 .about .content .icons h3 i {
   padding-right: .5rem;
-  color: #eacf4f;
-}
-
-.Decorators .box-container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(31rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
-  gap: 2rem;
-}
-
-.Decorators .box-container .box {
-  text-align: center;
-  padding: 2rem;
-}
-
-.Decorators .box-container .box img {
-  height: 10rem;
-  width: 10rem;
-  border-radius: 50%;
-  margin-bottom: 1rem;
-}
-
-.Decorators .box-container .box h3 {
-  font-size: 2rem;
-  text-transform: uppercase;
-  color: #fff;
-}
-
-.Decorators .box-container .box p {
-  font-size: 1.4rem;
-  line-height: 2;
-  color: #aaa;
-  padding: 1rem 0;
-}
-
-.Decorators .box-container .box .stars {
-  padding-top: .5rem;
-}
-
-.Decorators .box-container .box .stars i {
-  font-size: 1.7rem;
   color: #eacf4f;
 }
 
